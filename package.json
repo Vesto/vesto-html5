@@ -1,0 +1,15 @@
+{
+  "name": "vesto-html5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/electron": "^1.4.29",
+    "electron-prebuilt": "^1.4.12"
+  }
+}

@@ -1,0 +1,1 @@
+`vesto-html5` is the whole package: it manages module loading, has all the UI, etc. etc.
