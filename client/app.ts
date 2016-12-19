@@ -1,16 +1,15 @@
+import "quark-html5"; // Modifies the prototypes automatically
 import { View, ViewBacking, Color, Rect } from "quark";
 
+// Get the current version
 document.write(`The current version is ${process.version}`);
-
-import html5 = require("quark-html5");
-html5.alterPrototypes();
 
 // let rootView = new QKView(document.body);
 let rootView = new View();
 rootView.rect = new Rect(10, 10, 300, 300);
 rootView.backgroundColor = new Color(1, 0, 0, 1);
 
-let documentView = new View(document.body as any as ViewBacking); // TODO: Fix hack
+let documentView = new View(document.body as ViewBacking);
 documentView.addSubview(rootView);
 
 let view = new View();
