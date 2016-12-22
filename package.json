@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/electron": "^1.4.29",
+    "@types/node": "^6.0.52",
     "electron-prebuilt": "^1.4.12"
   }
 }
