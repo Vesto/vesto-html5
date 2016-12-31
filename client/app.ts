@@ -11,10 +11,7 @@ let rootView = new QKView();
 rootView.style.position = "absolute";
 rootView.style.width = "";
 rootView.style.height = "";
-rootView.style.left = "0";
-rootView.style.right = "0";
-rootView.style.top = "0";
-rootView.style.bottom = "0";
+rootView.style.left = rootView.style.right = rootView.style.top = rootView.style.bottom = "0";
 document.body.appendChild(rootView);
 
 // Create and start the instance
