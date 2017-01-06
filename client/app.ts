@@ -1,4 +1,4 @@
-import { QKInstance, QKModule, QKView } from "quark-html5"; // Modifies the prototypes automatically
+import { QKInstance, QKModule, QKRootView } from "quark-html5"; // Modifies the prototypes automatically
 import { webFrame } from "electron";
 import * as URI from "urijs";
 
@@ -7,7 +7,7 @@ webFrame.setLayoutZoomLevelLimits(0, 0);
 // webFrame.setVisualZoomLevelLimits(0, 0); // TODO: This prevents trackpad two finger double tap) scrolling, but crashes Electron
 
 // Style root view to fit the viewport
-let rootView = new QKView();
+let rootView = new QKRootView();
 rootView.style.position = "absolute";
 rootView.style.width = "";
 rootView.style.height = "";

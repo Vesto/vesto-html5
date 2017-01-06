@@ -10,7 +10,7 @@ Simply replace node_modules/electron-prebuilt/dist/Electron.app with the new ver
 // Get a path to where the client folder is located with the resources
 let clientPath = `file://${__dirname}/../client`;
 
-// Create the window whenever ready // TODO: Use window.setThumbarButtons ?
+// Create the window whenever ready
 app.on('ready', () => {
     let mainWindow = new BrowserWindow({
         width: 800,
